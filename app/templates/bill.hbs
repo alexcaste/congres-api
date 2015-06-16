@@ -1,0 +1,13 @@
+
+<ul class="list-unstyled">
+  {{#each bill in model}}
+
+  <li><span class="muted">{{bill.bill_id}}</span></li>
+  <li><span class="title">{{bill.official_title}}</span></li>
+  <li><span class="muted">{{bill.description}}</span></li>
+  <li><span class="muted">{{bill.sponsor_id}}</span></li>
+  <li><span class="muted">{{bill.committee_ids}}</span></li>
+  <li><span class="muted">{{bill.introduced_on}}</span></li>
+  <li><span class="muted">{{bill.urls.html}}</span></li>
+  {{/each}}
+</ul>

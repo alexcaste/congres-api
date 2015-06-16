@@ -2,9 +2,11 @@
 <ul>
   {{#each recentBill in model}}
 
-  <li>{{link-to 'bill' this.bill_id}}{{recentBill.official_title}}</li>
+  <li>{{#link-to 'bill' recentBill.bill_id}}{{recentBill.official_title}}{{/link-to}}</li>
 
 
 
   {{/each}}
 </ul>
+
+{{outlet}}
