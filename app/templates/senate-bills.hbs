@@ -1,0 +1,11 @@
+
+<ul class="list-unstyled">
+  {{#each senateBill in model}}
+
+  <li><span class="title">{{senateBill.bill_id}}</span></li>
+  <li><span class="muted">{{senateBill.description}}</span></li>
+  <li><span class="muted">{{senateBill.context}}</span></li>
+
+
+  {{/each}}
+</ul>

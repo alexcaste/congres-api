@@ -1,0 +1,10 @@
+
+<ul>
+  {{#each recentBill in model}}
+
+  <li>{{link-to 'bill' this.bill_id}}{{recentBill.official_title}}</li>
+
+
+
+  {{/each}}
+</ul>

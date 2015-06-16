@@ -1,11 +1,15 @@
 <h1>Legislator Lookup</h1>
 
-<form>
-  <div class="form-group">
-    <label for="zip">Zip</label>
-    {{input value=zip id="zip"}}
-  </div>
+<div class="col-md-4">
+  <form>
+    <div class="form-group ">
+      <label for="zip"></label>
+      {{input value=zip id="zip" placeholder="Zip Code"}}
+    </div>
 
-  <button class="btn btn-primary" {{action 'submit'}}>Submit</button>
-</form>
-{{outlet}}
+    <button class="btn btn-primary" {{action 'submit'}}>Submit</button>
+  </form>
+</div>
+<div class="col-md-8">
+  {{outlet}}
+</div>
