@@ -8,6 +8,12 @@
   <li><span class="muted">{{bill.sponsor_id}}</span></li>
   <li><span class="muted">{{bill.committee_ids}}</span></li>
   <li><span class="muted">{{bill.introduced_on}}</span></li>
-  <li><span class="muted">{{bill.urls.html}}</span></li>
+  Links to this damn bill:
+  <li><a href="{{bill.last_version.urls.html}}"><span class="muted">{{bill.last_version.urls.html}}</span></a></li>
+  <li><a href="{{bill.last_version.urls.xml}}"><span class="muted">{{bill.last_version.urls.xml}}</span></a></li>
+  <li><a href="{{bill.last_version.urls.pdf}}"><span class="muted">{{bill.last_version.urls.pdf}}</span></a></li>
+
+
+
   {{/each}}
 </ul>
