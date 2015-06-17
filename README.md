@@ -1,7 +1,8 @@
 # Congress-api
 
 This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+
+This app was an introduction to api usage.  This app pulls data from a public congressional site and allows the user to query the data using ember-cli, jquery and javascript.  there was an error in the websites api which made us have to revert to jsonp for a couple queries.
 
 ## Prerequisites
 
